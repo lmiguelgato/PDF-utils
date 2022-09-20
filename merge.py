@@ -1,4 +1,4 @@
-''' Forked and enhanced, after the original: https://github.com/titse/PythonCombinePDF '''
+''' https://stackoverflow.com/questions/3444645/merge-pdf-files '''
 
 import os
 from PyPDF2 import PdfFileMerger
@@ -7,7 +7,7 @@ from PyPDF2 import PdfFileMerger
 fileDir = os.path.dirname(os.path.realpath(__file__))
 print(f"This is fileDir: {fileDir}")
 
-#pdf get all the pdfs to merge
+# Get all the pdfs to merge
 pdfToMerge = [pdfIndex for pdfIndex in os.listdir(fileDir) if pdfIndex.endswith(".pdf")]
 print("The files to merge are:")
 print(pdfToMerge)
